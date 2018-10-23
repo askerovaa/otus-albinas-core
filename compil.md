@@ -1,5 +1,5 @@
-1.1. для выполнения компиляции ядра ставим зависимости /n
-sudo yum install -y wget ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 /n
+1.1. для выполнения компиляции ядра ставим зависимости 
+sudo yum install -y wget ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2
 (..кажется, чего не хватает, поставим sudo yum groupinstall "Development Tools")
 1.2. скачиваем исходники (kernel.org)
 wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.18.15.tar.xz
@@ -9,4 +9,3 @@ wget https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.18.15.tar.xz
 настройки скомпилированного ядра
 1.5. после завершения конфигурации запускаем компиляцию sudo make
 1.6. по завершении компиляции в /var/log/yum.log отображается перечень установленных пакетов
-/n
